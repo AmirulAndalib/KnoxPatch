@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <dimen name="sesl_switch_width">35.0dp</dimen>
+
     <dimen name="sep_main_switch_padding_horizontal">12.0dp</dimen>
 
 </resources>

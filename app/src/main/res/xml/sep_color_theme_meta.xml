@@ -2,12 +2,22 @@
 <ThemeMetaData FormatVersion="1.3" GuideVersion="1.4">
     <AppMetaData Name="KnoxPatch" TargetApi="28" TargetPackageName="io.mesalabs.knoxpatch" VersionCode="1" VersionName="">
         <Include RefName="SESL" />
-        <Property Comment="Main switch off background color" DefaultValue="#fffcfcfc" DestAttribName="sep_theme_main_switch_off_background_color" UID="610-1" ValueRef="1-40-2" ValueType="BgColor" />
-        <Property Comment="Main switch on background color" DefaultValue="#ffe9e9e9" DestAttribName="sep_theme_main_switch_on_background_color" UID="610-2" ValueRef="1-40-1" ValueType="BgColor" />
-        <Property Comment="Main switch off text color" DefaultValue="#ff252525" DestAttribName="sep_theme_main_switch_off_text_color" UID="610-3" ValueRef="1-40-4" ValueType="BgColor" />
-        <Property Comment="Main switch on text color" DefaultValue="#ff0072de" DestAttribName="sep_theme_main_switch_on_text_color" UID="610-4" ValueRef="1-40-3" ValueType="BgColor" />
-        <Property Comment="App name text color" DefaultValue="#ff010101" DestAttribName="info_app_name_color" UID="610-5" ValueRef="1-1-3" ValueType="Color"/>
-        <Property Comment="App version text color" DefaultValue="#ff8c8c8c" DestAttribName="info_app_version_color" UID="610-6" ValueRef="1-1-4" ValueType="Color"/>
-        <Property Comment="GitHub Icon color" DefaultValue="#ff8c8c8c" DestAttribName="info_github_icon_color" UID="610-7" ValueRef="1-11-3" ValueType="Color" />
+        <Property Comment="Round and bg color" DefaultValue="#fff6f6f8" DestAttribName="sep_theme_round_and_bg_color" UID="610-1" ValueRef="1-1-1" ValueType="BgColor" />
+        <Property Comment="Background color" DefaultValue="#fffafafa" DestAttribName="sep_theme_background_color" POption="FixedOpacity|AlwaysOverriden" UID="610-2" ValueRef="1-18-1" ValueType="BgColor" />
+        <Property Comment="Track: Common Switch Thumb Disabled Off Stroke Color" DefaultValue="#668c8c8c" DestAttribName="sep_theme_switch_thumb_off_disabled_stroke_color" UID="610-3" ValueRef="1-5-7-1-1" ValueType="BgColor" />
+        <Property Comment="Track: Common Switch Thumb Off Stroke Color" DefaultValue="#6699999e" DestAttribName="sep_theme_switch_track_off_color, sep_theme_switch_track_off_disabled_color" UID="610-4" ValueRef="1-5-2-1-1" ValueType="BgColor" />
+        <Property Comment="Track: Common Switch Thumb Disabled Off Bg Color" DefaultValue="#fffcfcff" DestAttribName="sep_theme_switch_thumb_off_disabled_color" UID="610-5" ValueRef="1-5-7-1" ValueType="BgColor" />
+        <Property Comment="Track: Common Switch Track Disabled On Bg Color" DefaultValue="#660381fe" DestAttribName="sep_theme_switch_track_on_disabled_color" UID="610-6" ValueRef="1-5-3-2" ValueType="BgColor" />
+        <Property Comment="Track: Common Switch Track On Bg Color" DefaultValue="#ff0381fe" DestAttribName="sep_theme_switch_track_on_color" UID="610-7" ValueRef="1-5-1-2" ValueType="BgColor" />
+        <Property Comment="Thumb: Common Switch Thumb Disabled On Stroke Color" DefaultValue="#660381fe" DestAttribName="sep_theme_switch_thumb_on_disabled_stroke_color" UID="610-8" ValueRef="1-5-3-1-1" ValueType="BgColor" />
+        <Property Comment="Thumb: Common Switch Thumb Disabled On Bg Color" DefaultValue="#fffcfcff" DestAttribName="sep_theme_switch_thumb_on_disabled_color" UID="610-9" ValueRef="1-5-3-1" ValueType="BgColor" />
+        <Property Comment="Thumb: Common Switch Thumb Off Bg Color" DefaultValue="#fffcfcff" DestAttribName="sep_theme_switch_thumb_off_color" UID="610-10" ValueRef="1-5-2-1" ValueType="BgColor" />
+        <Property Comment="Main switch off background color" DefaultValue="#fffcfcfc" DestAttribName="sep_theme_main_switch_off_background_color" UID="610-11" ValueRef="1-40-2" ValueType="BgColor" />
+        <Property Comment="Main switch on background color" DefaultValue="#ffe9e9e9" DestAttribName="sep_theme_main_switch_on_background_color" UID="610-12" ValueRef="1-40-1" ValueType="BgColor" />
+        <Property Comment="Main switch off text color" DefaultValue="#ff252525" DestAttribName="sep_theme_main_switch_off_text_color" UID="610-13" ValueRef="1-40-4" ValueType="BgColor" />
+        <Property Comment="Main switch on text color" DefaultValue="#ff0072de" DestAttribName="sep_theme_main_switch_on_text_color" UID="610-14" ValueRef="1-40-3" ValueType="BgColor" />
+        <Property Comment="App name text color" DefaultValue="#ff010101" DestAttribName="info_app_name_color" UID="610-15" ValueRef="1-1-3" ValueType="Color"/>
+        <Property Comment="App version text color" DefaultValue="#ff8c8c8c" DestAttribName="info_app_version_color" UID="610-16" ValueRef="1-1-4" ValueType="Color"/>
+        <Property Comment="GitHub Icon color" DefaultValue="#ff8c8c8c" DestAttribName="info_github_icon_color" UID="610-17" ValueRef="1-11-3" ValueType="Color" />
     </AppMetaData>
 </ThemeMetaData>

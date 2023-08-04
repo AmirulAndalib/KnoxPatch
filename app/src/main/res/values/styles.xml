@@ -1,0 +1,8 @@
+<resources>
+
+    <style name="Widget.KnoxPatch.Switch" parent="Widget.AppCompat.Light.CompoundButton.Switch">
+        <item name="android:thumb">@drawable/sep_theme_switch_thumb_selector</item>
+        <item name="track">@drawable/sep_theme_switch_track_selector</item>
+    </style>
+
+</resources>
