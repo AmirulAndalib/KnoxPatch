@@ -29,19 +29,125 @@ object KnoxMatrixHooks : YukiBaseHooker() {
     override fun onHook() {
         YLog.debug(msg = "$TAG: onHook: loaded.")
 
-        /* Bypass ROT/Knox integrity status check */
-        "com.samsung.android.kmxservice.fabrickeystore.keystore.cert.FabricCertUtil".toClass().resolve().apply {
-            firstMethod {
-                name = "checkIntegrityStatus"
-                parameterCount = 1
-            }.hook {
-                replaceToTrue()
+        /* Bypass Root of Trust checks */
+        "com.samsung.android.kmxservice.common.util.RootOfTrust".toClassOrNull()?.resolve()?.apply {
+            firstMethodOrNull {
+                name = "getVerifiedBootState"
+                returnType = Int::class
+            }?.hook {
+                replaceTo(0)
             }
 
-            firstMethod {
-                name = "checkRootOfTrust"
-                parameterCount = 1
-            }.hook {
+            firstMethodOrNull {
+                name = "isDeviceLocked"
+                returnType = Boolean::class
+            }?.hook {
+                replaceToTrue()
+            }
+        }
+
+        "com.samsung.android.kmxservice.fabrickeystore.keystore.cert.RootOfTrust".toClassOrNull()?.resolve()?.apply {
+            firstMethodOrNull {
+                name = "getVerifiedBootState"
+                returnType = Int::class
+            }?.hook {
+                replaceTo(0)
+            }
+
+            firstMethodOrNull {
+                name = "isDeviceLocked"
+                returnType = Boolean::class
+            }?.hook {
+                replaceToTrue()
+            }
+        }
+
+        "com.samsung.android.kmxservice.sdk.trustchain.util.RootOfTrust".toClassOrNull()?.resolve()?.apply {
+            firstMethodOrNull {
+                name = "getVerifiedBootState"
+                returnType = Int::class
+            }?.hook {
+                replaceTo(0)
+            }
+
+            firstMethodOrNull {
+                name = "isDeviceLocked"
+                returnType = Boolean::class
+            }?.hook {
+                replaceToTrue()
+            }
+        }
+
+        "com.samsung.android.kmxservice.sdk.util.RootOfTrust".toClassOrNull()?.resolve()?.apply {
+            firstMethodOrNull {
+                name = "getVerifiedBootState"
+                returnType = Int::class
+            }?.hook {
+                replaceTo(0)
+            }
+
+            firstMethodOrNull {
+                name = "isDeviceLocked"
+                returnType = Boolean::class
+            }?.hook {
+                replaceToTrue()
+            }
+        }
+
+        /* Bypass Knox Integrity Status checks */
+        "com.samsung.android.kmxservice.common.util.IntegrityStatus".toClassOrNull()?.resolve()?.apply {
+            firstMethodOrNull {
+                name = "getStatus"
+                returnType = Int::class
+            }?.hook {
+                replaceTo(0)
+            }
+
+            firstMethodOrNull {
+                name = "isNormal"
+                returnType = Boolean::class
+            }?.hook {
+                replaceToTrue()
+            }
+        }
+
+        "com.samsung.android.kmxservice.fabrickeystore.keystore.cert.IntegrityStatus".toClassOrNull()?.resolve()?.apply {
+            firstMethodOrNull {
+                name = "isNormal"
+                returnType = Boolean::class
+            }?.hook {
+                replaceToTrue()
+            }
+        }
+
+        "com.samsung.android.kmxservice.sdk.trustchain.util.IntegrityStatus".toClassOrNull()?.resolve()?.apply {
+            firstMethodOrNull {
+                name = "getStatus"
+                returnType = Int::class
+            }?.hook {
+                replaceTo(0)
+            }
+
+            firstMethodOrNull {
+                name = "isNormal"
+                returnType = Boolean::class
+            }?.hook {
+                replaceToTrue()
+            }
+        }
+
+        "com.samsung.android.kmxservice.sdk.util.IntegrityStatus".toClassOrNull()?.resolve()?.apply {
+            firstMethodOrNull {
+                name = "getStatus"
+                returnType = Int::class
+            }?.hook {
+                replaceTo(0)
+            }
+
+            firstMethodOrNull {
+                name = "isNormal"
+                returnType = Boolean::class
+            }?.hook {
                 replaceToTrue()
             }
         }
