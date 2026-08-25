@@ -1,6 +1,6 @@
 [versions]
-agp = "9.3.1"
-ksp = "2.3.10"
+agp = "9.3.2"
+ksp = "2.3.11"
 # Sesl: https://github.com/tribalfs/sesl-androidx/tree/sesl-androidx-main
 appcompat = "1.7.1+1.0.21-sesl8+rev8"
 material = "1.12.0+1.0.32-sesl8+rev3"
